@@ -1,0 +1,46 @@
+vins:
+rosbag record /dwm1001/tag/tag/position /vins_estimator/odometry /cpu_monitor/vins_estimator/cpu /cpu_monitor/vins_estimator/mem
+
+Lio:
+rosbag record /dwm1001/tag/tag/position /lio_sam/mapping/odometry /cpu_monitor/lio_sam_featureExtraction/cpu /cpu_monitor lio_sam_featureExtraction/mem /cpu_monitor/lio_sam_imageProjection/cpu /cpu_monitor/lio_sam_imageProjection/mem /cpu_monitor/lio_sam_imuPreintegration/cpu /cpu_monitor/lio_sam_imuPreintegration/mem /cpu_monitor/lio_sam_mapOptmization/cpu /cpu_monitor/lio_sam_mapOptmization/mem
+
+LINS:
+rosbag record /dwm1001/tag/tag/position /laser_odom_to_init /cpu_monitor/image_projection_node/cpu /cpu_monitor/image_projection_node/mem /cpu_monitor/lidar_mapping_node/cpu /cpu_monitor/lidar_mapping_node/mem /cpu_monitor/lins_fusion_node/cpu /cpu_monitor/lins_fusion_node/mem
+
+
+IscLoam:
+rosbag record /dwm1001/tag/tag/position /odom /odom_final /final_path /cpu_monitor/iscloam_isc_generation_node/cpu /cpu_monitor/iscloam_isc_generation_node/mem /cpu_monitor/iscloam_isc_optimization_node/cpu /cpu_monitor/iscloam_isc_optimization_node/mem /cpu_monitor/iscloam_laser_processing_node/cpu /cpu_monitor/iscloam_laser_processing_node/mem /cpu_monitor/iscloam_odom_estimation_node/cpu /cpu_monitor/iscloam_odom_estimation_node/mem /cpu_monitor/odom_final/trajectory_server_loam/cpu /cpu_monitor/odom_final/trajectory_server_loam/mem
+
+lvi_slam: 
+rosbag record /dwm1001/tag/tag/position /lvi_sam/lidar/mapping/odometry /lvi_sam/lidar/mapping/path /lvi_sam/lidar/mapping/trajectory /lvi_sam/vins/odometry/odometry /lvi_sam/vins/odometry/path /cpu_monitor/lvi_sam_featureExtraction/cpu /cpu_monitor/lvi_sam_featureExtraction/mem /cpu_monitor/lvi_sam_imageProjection/cpu /cpu_monitor/lvi_sam_imageProjection/mem /cpu_monitor/lvi_sam_imuPreintegration/cpu /cpu_monitor/lvi_sam_imuPreintegration/mem /cpu_monitor/lvi_sam_mapOptmization/cpu /cpu_monitor/lvi_sam_mapOptmization/mem /cpu_monitor/lvi_sam_robot_state_publisher/cpu /cpu_monitor/lvi_sam_robot_state_publisher/mem
+
+
+sc_lego_loam:
+rosbag record /dwm1001/tag/tag/position /key_pose_origin /laser_odom_to_init /cpu_monitor/featureAssociation/cpu /cpu_monitor/featureAssociation/mem /cpu_monitor/imageProjection/cpu /cpu_monitor/imageProjection/mem /cpu_monitor/mapOptmization/cpu /cpu_monitor/mapOptmization/mem 
+
+fast_lio:
+rosbag record /dwm1001/tag/tag/position /Odometry /cpu_monitor/laserMapping/cpu /cpu_monitor/laserMapping/mem
+
+
+Fast-LIO-SLAM (SC):
+rosbag record /dwm1001/tag/tag/position /Odometry /aft_mapped_to_init /aft_pgo_odom /cpu_monitor/alaserMapping/cpu /cpu_monitor/alaserMapping/mem /cpu_monitor/alaserOdometry/cpu /cpu_monitor/alaserOdometry/mem /cpu_monitor/alaserPGO/cpu /cpu_monitor/alaserPGO/mem /cpu_monitor/ascanRegistration/cpu /cpu_monitor/ascanRegistration/mem /cpu_monitor/cpu_monitor/cpu /cpu_monitor/cpu_monitor/mem /cpu_monitor/laserMapping/cpu /cpu_monitor/laserMapping/mem 
+
+
+
+A-LOAM:
+rosbag record /dwm1001/tag/tag/position /aft_mapped_to_init /aft_mapped_to_init_high_frec /laser_odom_to_init /cpu_monitor/alaserMapping/cpu /cpu_monitor/alaserMapping/mem /cpu_monitor/alaserOdometry/cpu /cpu_monitor/alaserOdometry/mem /cpu_monitor/ascanRegistration/cpu /cpu_monitor/ascanRegistration/mem 
+
+
+F-LOAM
+
+rosbag record /dwm1001/tag/tag/position /odom /cpu_monitor/floam_laser_mapping_node/cpu /cpu_monitor/floam_laser_mapping_node/mem /cpu_monitor/floam_laser_processing_node/cpu /cpu_monitor/floam_laser_processing_node/mem /cpu_monitor/floam_odom_estimation_node/cpu /cpu_monitor/floam_odom_estimation_node/mem /cpu_monitor/velodyne_nodelet_manager/cpu /cpu_monitor/velodyne_nodelet_manager/mem /cpu_monitor/velodyne_nodelet_manager_cloud/cpu /cpu_monitor/velodyne_nodelet_manager_cloud/mem /cpu_monitor/velodyne_nodelet_manager_driver/cpu /cpu_monitor/velodyne_nodelet_manager_driver/mem /cpu_monitor/velodyne_nodelet_manager_laserscan/cpu /cpu_monitor/velodyne_nodelet_manager_laserscan/mem /cpu_monitor/word2map_tf/cpu /cpu_monitor/word2map_tf/mem /base_link/trajectory
+
+
+
+OKVIS:
+
+rosbag record /dwm1001/tag/tag/position /okvis_node/okvis_odometry
+
+
+
+
